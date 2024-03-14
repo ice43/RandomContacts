@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD99F8162BA30C7D00A6403A /* RandomContactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8152BA30C7D00A6403A /* RandomContactsApp.swift */; };
-		CD99F8182BA30C7D00A6403A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8172BA30C7D00A6403A /* ContentView.swift */; };
+		CD99F8182BA30C7D00A6403A /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8172BA30C7D00A6403A /* ContactsView.swift */; };
 		CD99F81A2BA30C7E00A6403A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD99F8192BA30C7E00A6403A /* Assets.xcassets */; };
 		CD99F81D2BA30C7E00A6403A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD99F81C2BA30C7E00A6403A /* Preview Assets.xcassets */; };
 		CD99F8252BA30E1600A6403A /* PersonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8242BA30E1600A6403A /* PersonsListView.swift */; };
@@ -17,12 +17,14 @@
 		CD99F82D2BA30FDC00A6403A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F82C2BA30FDC00A6403A /* Person.swift */; };
 		CD99F82F2BA312F800A6403A /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F82E2BA312F800A6403A /* PersonDetailsView.swift */; };
 		CD99F8322BA3175400A6403A /* PersonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8312BA3175400A6403A /* PersonRowView.swift */; };
+		CD99F8342BA3217A00A6403A /* SectionRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8332BA3217A00A6403A /* SectionRowsView.swift */; };
+		CD99F8382BA325A600A6403A /* ContactsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8372BA325A600A6403A /* ContactsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD99F8122BA30C7D00A6403A /* RandomContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD99F8152BA30C7D00A6403A /* RandomContactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomContactsApp.swift; sourceTree = "<group>"; };
-		CD99F8172BA30C7D00A6403A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD99F8172BA30C7D00A6403A /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		CD99F8192BA30C7E00A6403A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD99F81C2BA30C7E00A6403A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD99F8242BA30E1600A6403A /* PersonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListView.swift; sourceTree = "<group>"; };
@@ -31,6 +33,8 @@
 		CD99F82C2BA30FDC00A6403A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CD99F82E2BA312F800A6403A /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		CD99F8312BA3175400A6403A /* PersonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRowView.swift; sourceTree = "<group>"; };
+		CD99F8332BA3217A00A6403A /* SectionRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRowsView.swift; sourceTree = "<group>"; };
+		CD99F8372BA325A600A6403A /* ContactsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				CD99F8302BA3136500A6403A /* App */,
-				CD99F8172BA30C7D00A6403A /* ContentView.swift */,
-				CD99F8242BA30E1600A6403A /* PersonsListView.swift */,
-				CD99F8312BA3175400A6403A /* PersonRowView.swift */,
-				CD99F82E2BA312F800A6403A /* PersonDetailsView.swift */,
-				CD99F8262BA30E3000A6403A /* SectionContactsView.swift */,
+				CD99F8362BA3256C00A6403A /* ContactsView */,
+				CD99F8352BA3255100A6403A /* Views */,
 				CD99F82B2BA30FB800A6403A /* Models */,
 				CD99F8282BA30F7D00A6403A /* Services */,
 				CD99F8232BA30CB300A6403A /* Resources */,
@@ -115,6 +116,27 @@
 				CD99F8152BA30C7D00A6403A /* RandomContactsApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		CD99F8352BA3255100A6403A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F8242BA30E1600A6403A /* PersonsListView.swift */,
+				CD99F8312BA3175400A6403A /* PersonRowView.swift */,
+				CD99F82E2BA312F800A6403A /* PersonDetailsView.swift */,
+				CD99F8262BA30E3000A6403A /* SectionContactsView.swift */,
+				CD99F8332BA3217A00A6403A /* SectionRowsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD99F8362BA3256C00A6403A /* ContactsView */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F8172BA30C7D00A6403A /* ContactsView.swift */,
+				CD99F8372BA325A600A6403A /* ContactsViewViewModel.swift */,
+			);
+			path = ContactsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +211,14 @@
 			files = (
 				CD99F8322BA3175400A6403A /* PersonRowView.swift in Sources */,
 				CD99F82D2BA30FDC00A6403A /* Person.swift in Sources */,
-				CD99F8182BA30C7D00A6403A /* ContentView.swift in Sources */,
+				CD99F8182BA30C7D00A6403A /* ContactsView.swift in Sources */,
 				CD99F8252BA30E1600A6403A /* PersonsListView.swift in Sources */,
+				CD99F8382BA325A600A6403A /* ContactsViewViewModel.swift in Sources */,
 				CD99F82F2BA312F800A6403A /* PersonDetailsView.swift in Sources */,
 				CD99F8162BA30C7D00A6403A /* RandomContactsApp.swift in Sources */,
 				CD99F82A2BA30F8D00A6403A /* DataStore.swift in Sources */,
 				CD99F8272BA30E3000A6403A /* SectionContactsView.swift in Sources */,
+				CD99F8342BA3217A00A6403A /* SectionRowsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

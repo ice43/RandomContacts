@@ -11,7 +11,7 @@ import SwiftUI
 struct RandomContactsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContactsView()
         }
     }
 }

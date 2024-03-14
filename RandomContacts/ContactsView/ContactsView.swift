@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ContactsView.swift
 //  RandomContacts
 //
 //  Created by Serge Broski on 3/14/24.
@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    private let contacts = Person.getContacts()
+struct ContactsView: View {
+    private let contactsViewVM = ContactsViewViewModel()
     
     var body: some View {
         TabView {
-            PersonsListView(contacts: contacts)
+            PersonsListView(contacts: contactsViewVM.contacts)
                 .tabItem {
                     Image(systemName: "person.2.fill")
                     Text("Contacts")
                 }
             
-            SectionContactsView(contacts: contacts)
+            SectionContactsView(contacts: contactsViewVM.contacts)
                 .tabItem {
                     Image(systemName: "phone.fill")
                     Text("Numbers")
@@ -28,5 +28,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContactsView()
 }
