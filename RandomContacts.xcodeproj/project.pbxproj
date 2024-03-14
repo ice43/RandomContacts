@@ -11,6 +11,12 @@
 		CD99F8182BA30C7D00A6403A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8172BA30C7D00A6403A /* ContentView.swift */; };
 		CD99F81A2BA30C7E00A6403A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD99F8192BA30C7E00A6403A /* Assets.xcassets */; };
 		CD99F81D2BA30C7E00A6403A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD99F81C2BA30C7E00A6403A /* Preview Assets.xcassets */; };
+		CD99F8252BA30E1600A6403A /* PersonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8242BA30E1600A6403A /* PersonsListView.swift */; };
+		CD99F8272BA30E3000A6403A /* SectionContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8262BA30E3000A6403A /* SectionContactsView.swift */; };
+		CD99F82A2BA30F8D00A6403A /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8292BA30F8D00A6403A /* DataStore.swift */; };
+		CD99F82D2BA30FDC00A6403A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F82C2BA30FDC00A6403A /* Person.swift */; };
+		CD99F82F2BA312F800A6403A /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F82E2BA312F800A6403A /* PersonDetailsView.swift */; };
+		CD99F8322BA3175400A6403A /* PersonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD99F8312BA3175400A6403A /* PersonRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		CD99F8172BA30C7D00A6403A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD99F8192BA30C7E00A6403A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD99F81C2BA30C7E00A6403A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD99F8242BA30E1600A6403A /* PersonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListView.swift; sourceTree = "<group>"; };
+		CD99F8262BA30E3000A6403A /* SectionContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionContactsView.swift; sourceTree = "<group>"; };
+		CD99F8292BA30F8D00A6403A /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		CD99F82C2BA30FDC00A6403A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CD99F82E2BA312F800A6403A /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
+		CD99F8312BA3175400A6403A /* PersonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +63,15 @@
 		CD99F8142BA30C7D00A6403A /* RandomContacts */ = {
 			isa = PBXGroup;
 			children = (
-				CD99F8152BA30C7D00A6403A /* RandomContactsApp.swift */,
+				CD99F8302BA3136500A6403A /* App */,
 				CD99F8172BA30C7D00A6403A /* ContentView.swift */,
-				CD99F8192BA30C7E00A6403A /* Assets.xcassets */,
+				CD99F8242BA30E1600A6403A /* PersonsListView.swift */,
+				CD99F8312BA3175400A6403A /* PersonRowView.swift */,
+				CD99F82E2BA312F800A6403A /* PersonDetailsView.swift */,
+				CD99F8262BA30E3000A6403A /* SectionContactsView.swift */,
+				CD99F82B2BA30FB800A6403A /* Models */,
+				CD99F8282BA30F7D00A6403A /* Services */,
+				CD99F8232BA30CB300A6403A /* Resources */,
 				CD99F81B2BA30C7E00A6403A /* Preview Content */,
 			);
 			path = RandomContacts;
@@ -65,6 +83,38 @@
 				CD99F81C2BA30C7E00A6403A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD99F8232BA30CB300A6403A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F8192BA30C7E00A6403A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD99F8282BA30F7D00A6403A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F8292BA30F8D00A6403A /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CD99F82B2BA30FB800A6403A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F82C2BA30FDC00A6403A /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD99F8302BA3136500A6403A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CD99F8152BA30C7D00A6403A /* RandomContactsApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD99F8322BA3175400A6403A /* PersonRowView.swift in Sources */,
+				CD99F82D2BA30FDC00A6403A /* Person.swift in Sources */,
 				CD99F8182BA30C7D00A6403A /* ContentView.swift in Sources */,
+				CD99F8252BA30E1600A6403A /* PersonsListView.swift in Sources */,
+				CD99F82F2BA312F800A6403A /* PersonDetailsView.swift in Sources */,
 				CD99F8162BA30C7D00A6403A /* RandomContactsApp.swift in Sources */,
+				CD99F82A2BA30F8D00A6403A /* DataStore.swift in Sources */,
+				CD99F8272BA30E3000A6403A /* SectionContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +331,12 @@
 				DEVELOPMENT_TEAM = V3YK82Q5NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Random Contacts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +344,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.RandomContacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +365,12 @@
 				DEVELOPMENT_TEAM = V3YK82Q5NN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Random Contacts";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +378,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.RandomContacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
