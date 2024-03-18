@@ -15,31 +15,21 @@ struct PersonDetailsView: View {
             HStack {
                 Spacer()
                 
-                Image(systemName: "person.fill")
+                Image(systemName: contact.avatar)
                     .resizable()
                     .frame(width: 150, height: 150)
+                    .padding()
                 
                 Spacer()
             }
             
-            HStack {
-                Image(systemName: "phone")
-                    .foregroundStyle(.tint)
-                Text(contact.phone)
-            }
-            
-            HStack {
-                Image(systemName: "tray")
-                    .foregroundStyle(.tint)
-                Text(contact.email)
-            }
-            
-            
+            Label(contact.phone, systemImage: "phone")
+            Label(contact.email, systemImage: "tray")
         }
         .navigationTitle(contact.fullName)
     }
 }
 
 #Preview {
-    PersonDetailsView(contact: Person.getContact())
+    PersonDetailsView(contact: Person.getContacts().first!)
 }

@@ -12,13 +12,15 @@ struct SectionContactsView: View {
     
     var body: some View {
         NavigationStack {
-            List(contacts, id: \.self) { contact in
+            List(contacts) { contact in
                 Section {
-                    SectionRowsView(contact: contact)
+                    Label(contact.phone, systemImage: "phone")
+                    Label(contact.email, systemImage: "tray")
                 } header: {
                     Text(contact.fullName)
                 }
             }
+            .listStyle(.plain)
             .navigationTitle("Contact List")
         }
     }

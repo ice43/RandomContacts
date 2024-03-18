@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct ContactsView: View {
-    private let contactsViewVM = ContactsViewViewModel()
+    private let contacts = Person.getContacts()
     
     var body: some View {
         TabView {
-            PersonsListView(contacts: contactsViewVM.contacts)
+            PersonsListView(contacts: contacts)
                 .tabItem {
-                    Image(systemName: "person.2.fill")
+                    Image(systemName: "person.2")
                     Text("Contacts")
                 }
             
-            SectionContactsView(contacts: contactsViewVM.contacts)
+            SectionContactsView(contacts: contacts)
                 .tabItem {
-                    Image(systemName: "phone.fill")
+                    Image(systemName: "phone")
                     Text("Numbers")
                 }
         }
